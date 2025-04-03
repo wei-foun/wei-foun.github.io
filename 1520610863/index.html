@@ -1,0 +1,226 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>基础整理 | </title><meta name="keywords" content="基础"><meta name="author" content="Legacy"><meta name="copyright" content="Legacy"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="编程知识简单整理语言类型​    这个世界上有非常多的编程语言，他们大部分都可以胜任一个或多个领域的代码编程，但是各自之间的编程方式或执行方式都有些不同。从编程角度上分为三种：机器语言，汇编语言，高级语言 ​    机器语言：简单来说就是通过使用计算机底层的二进制码，也就是通过 0 和 1 编写机器指令来执行程序。通常来说，这个要求是非常大的，即不好记忆，也不方便对其进行阅读，但是执行非常快 ​">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基础整理">
+<meta property="og:url" content="http://example.com/1520610863/index.html">
+<meta property="og:site_name">
+<meta property="og:description" content="编程知识简单整理语言类型​    这个世界上有非常多的编程语言，他们大部分都可以胜任一个或多个领域的代码编程，但是各自之间的编程方式或执行方式都有些不同。从编程角度上分为三种：机器语言，汇编语言，高级语言 ​    机器语言：简单来说就是通过使用计算机底层的二进制码，也就是通过 0 和 1 编写机器指令来执行程序。通常来说，这个要求是非常大的，即不好记忆，也不方便对其进行阅读，但是执行非常快 ​">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3643566126,3775444869&fm=26&gp=0.jpg">
+<meta property="article:published_time" content="2020-05-27T08:27:02.000Z">
+<meta property="article:modified_time" content="2022-12-27T09:34:53.913Z">
+<meta property="article:author" content="Legacy">
+<meta property="article:tag" content="基础">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3643566126,3775444869&fm=26&gp=0.jpg"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://example.com/1520610863/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '基础整理',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-12-27 17:34:53'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">46</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">28</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">43</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 爱好收集</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3643566126,3775444869&amp;fm=26&amp;gp=0.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/"></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 爱好收集</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">基础整理</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-05-27T08:27:02.000Z" title="发表于 2020-05-27 16:27:02">2020-05-27</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-12-27T09:34:53.913Z" title="更新于 2022-12-27 17:34:53">2022-12-27</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">编程基础知识</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="基础整理"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="编程知识简单整理"><a href="#编程知识简单整理" class="headerlink" title="编程知识简单整理"></a>编程知识简单整理</h2><h3 id="语言类型"><a href="#语言类型" class="headerlink" title="语言类型"></a>语言类型</h3><p>​    这个世界上有非常多的编程语言，他们大部分都可以胜任一个或多个领域的代码编程，但是各自之间的编程方式或执行方式都有些不同。从编程角度上分为三种：机器语言，汇编语言，高级语言</p>
+<p>​    <strong>机器语言：</strong>简单来说就是通过使用计算机底层的二进制码，也就是通过 0 和 1 编写机器指令来执行程序。通常来说，这个要求是非常大的，即不好记忆，也不方便对其进行阅读，但是执行非常快</p>
+<p>​    <strong>汇编语言：</strong>类似与机器语言，但是对其进行了优化，通过将英文缩写来代替代码指令，称为 <strong>“助记符”</strong>，但是依旧通过编写指令来执行</p>
+<p>​    <strong>高级语言：</strong>进一步在汇编的基础上，将相关指令合成单条指令，形成了对指令的封装，让代码编写更简单，偏向人类思维方式，也更方便代码阅读</p>
+<p>​    从执行上来说：机器语言使用二进制码，因此可以被CPU直接解读执行；<strong>汇编语言和高级语言</strong> 的编写会产生一个 <strong>源程序</strong> 文件，<strong>这个文件不能被直接执行</strong>。对于汇编语言，需要汇编程序将源程序进行翻译并生成目标程序来执行。对于高级语言，又分成 <strong>解释型</strong> 或 <strong>编译型</strong> 两种程序进行翻译执行。需要知道的是，机器语言和汇编语言因为编写复杂，难以记忆和阅读，也被称为 “低级语言”</p>
+<h3 id="解释型和编译型"><a href="#解释型和编译型" class="headerlink" title="解释型和编译型"></a>解释型和编译型</h3><p>​    两种类型的执行方式，其实都是需要对代码进行一个机器码的翻译过程，但是两者方式并不同</p>
+<p>​    <strong>编译型</strong>（c，c++ 等）</p>
+<p>​    优点：编译器一般会有预编译的过程对代码进行优化，完成后运行不需要再次编译，所以编译型语言的程序执行效率高，编译后的文件可以脱离开发环境独立运行。需要知道的是，编译器的目的实现代码翻译机器码，并且会有两个步骤分别是编译和链接，链接是为了将模块的机器码和依赖库串连起来</p>
+<p>​    缺点：编译之后，如果要修改代码，那么就需要重新在编译一次。并且编译会根据当前操作系统环境生成机器码，不同的操作系统间移植会有问题，跨平台性相对较差</p>
+<p>​    <strong>解释型</strong>（python，javascript 等）</p>
+<p>​    优点：有良好的平台兼容性，在任何环境中都可以运行，但是前提需要安装解释器 (虚拟机)。因为不是整体编译后才能执行，所以相对更灵活，代码支持动态修改</p>
+<p>​    缺点：由于是边解释编译，边执行，因此执行效率比较低。而且因为没有整体编译后的执行文件，所以执行上就必须依赖于解释器</p>
+<h3 id="动态和静态"><a href="#动态和静态" class="headerlink" title="动态和静态"></a>动态和静态</h3><p>​    通常语言的分类中也会提到动态语言和静态语言，两者主要的区别是：<strong>在运行过程中，是否能够改变代码结构，变量是否需要声明数据类型。</strong></p>
+<p>​    <strong>动态语言</strong> 可以再运行时进行函数，对象等引用，或是删除已有的函数等，能够改变自身结构；同时，动态语言在运行时就会确定数据类型，<strong>变量的类型会按照被赋的值的类型判断</strong>，例如：Python，JavaScript 等</p>
+<p>​    <strong>静态语言</strong> 即不支持结构上的修改，同时变量使用，需要提前声明数据类型</p>
+<p>​    通常情况下解释型语言也是动态类型语言，编译型语言也是静态类型语言</p>
+<h3 id="强类型和弱类型"><a href="#强类型和弱类型" class="headerlink" title="强类型和弱类型"></a>强类型和弱类型</h3><p>​    <strong>强类型</strong> 语言表示一旦变量被制定了数据类型，除非进行了强制转换，否则就一直是原来的类型，并且 <strong>强类型中整型不能和字符串共同处理</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = <span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">type</span>(a)</span><br><span class="line">&lt;<span class="keyword">class</span> <span class="string">&#x27;int&#x27;</span>&gt;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a += <span class="string">&#x27;1&#x27;</span></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">&quot;&lt;pyshell#3&gt;&quot;</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">    a += <span class="string">&#x27;1&#x27;</span></span><br><span class="line">TypeError: unsupported operand <span class="built_in">type</span>(s) <span class="keyword">for</span> +=: <span class="string">&#x27;int&#x27;</span> <span class="keyword">and</span> <span class="string">&#x27;str&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>​    <strong>弱类型</strong> 就基本忽略了数据类型，一个变量可以被赋予不同的数据类型的值，并且 <strong>支持整型与字符串的处理</strong>，规则上会将整型强制转换为字符串来操作，得到结果将属于字符串类型</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">1</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line">a += <span class="string">&#x27;1&#x27;</span></span><br><span class="line"><span class="string">&quot;11&quot;</span></span><br></pre></td></tr></table></figure>
+<p><strong>总结：</strong></p>
+<p><img src="https://pic2.zhimg.com/80/b0aeb7ffd1667b9162e5329154d43777_720w.jpg" alt="img"></p>
+<h2 id="编码类型"><a href="#编码类型" class="headerlink" title="编码类型"></a>编码类型</h2><p>​    常见的有：ASCII，GBK，Unicode，UTF-8，UTF-16 等，需要知道 1 字节（B，byte）= 8 位（bit），二进制表示位就是 0000000，往上是 1KB = 1024 B，1MB = 1024 KB 等等</p>
+<p>​    ASCII：一个英文字母使用一个字节，包含大小写英文字母，0-9， 常规的标点符号和扩展的符号等，范围是 0 - 255</p>
+<p>​    GBK：中国制定的一套自己的编码规则，使用 2 个字节（16位）表示一个中文汉字，对于英文依旧使用 1个字节 = 1字母，还有一套中文编码 GB2312，表示国家标准第 2312 条</p>
+<p>​    Unicode：也叫万国码，包含了全世界所有的字符，但是 unicode 只是一个理论上的编码方式，它有不同的编码实现，32 位的 4 个字节</p>
+<p>​    UTF-8：是可变长度的 unicode ，对于英文依旧使用 1个字节（8位）存储，欧洲其他文字使用 2个字节（16位），中文使用 3个字节（24位）</p>
+<p>​    UTF-16：也是 unicode 的方式之一，但是全部将所有字符全部统一使用 16位 进行存储</p>
+<p>​    另外，python 的发布要比 unicode 的要早，所以这也就是为什么在 python2 的版本中使用的是 ASCII 的编码方式</p>
+<h2 id="数据类型的分类"><a href="#数据类型的分类" class="headerlink" title="数据类型的分类"></a>数据类型的分类</h2><p>​    python 中数据类型有 str，int，list，tuple，dict，bool，set</p>
+<p>​    其中分为 <strong>可变对象，不可哈希</strong> 的是：<strong>list，dict，set</strong>；分为 <strong>不可变对象，可哈希</strong> 的是：<strong>str，int，tuple</strong></p>
+<h3 id="可哈希，不可变"><a href="#可哈希，不可变" class="headerlink" title="可哈希，不可变"></a>可哈希，不可变</h3><p>​    什么是不可变，就是说不同的值需要使用不同的内存地址，例如对 python 的 str 进行操作，得到结果是使用另一个内存地址，而不是原来的</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="string">&#x27;hello&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">id</span>(a))    <span class="comment"># 2673291651144</span></span><br><span class="line"></span><br><span class="line">a += <span class="string">&#x27;world&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">id</span>(a))    <span class="comment"># 2673311883696</span></span><br></pre></td></tr></table></figure>
+<p>​    一个对象可哈希，那么在生存期内必须是不可变的，且这个对象内部需要一个哈希函数，和一个用来比较的方法，用来比较哈希的值。也就是说如果一个对象是可哈希的，它的内部需要有的魔法方法：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1) __eq__() 或者 __cmp__()</span><br><span class="line">2) __hash__()</span><br></pre></td></tr></table></figure>
+<p>​    这里有一个 <strong>注意点</strong>：</p>
+<p>​    python 中一切皆为对象，并且所有的类都有一个共同的继承父类 object，但是 object 类中是有提到的可哈希需要的两个方法的</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="built_in">dir</span>(<span class="built_in">object</span>))</span><br><span class="line">[<span class="string">&#x27;__eq__&#x27;</span>, <span class="string">&#x27;__hash__&#x27;</span>, <span class="string">&#x27;__class__&#x27;</span>, <span class="string">&#x27;__delattr__&#x27;</span>, <span class="string">&#x27;__dir__&#x27;</span>, <span class="string">&#x27;__doc__&#x27;</span>,  <span class="string">&#x27;__format__&#x27;</span>, <span class="string">&#x27;__ge__&#x27;</span>, <span class="string">&#x27;__getattribute__&#x27;</span>, <span class="string">&#x27;__gt__&#x27;</span>, <span class="string">&#x27;__init__&#x27;</span>, <span class="string">&#x27;__init_subclass__&#x27;</span>, <span class="string">&#x27;__le__&#x27;</span>, <span class="string">&#x27;__lt__&#x27;</span>, <span class="string">&#x27;__ne__&#x27;</span>, <span class="string">&#x27;__new__&#x27;</span>, <span class="string">&#x27;__reduce__&#x27;</span>, <span class="string">&#x27;__reduce_ex__&#x27;</span>, <span class="string">&#x27;__repr__&#x27;</span>, <span class="string">&#x27;__setattr__&#x27;</span>, <span class="string">&#x27;__sizeof__&#x27;</span>, <span class="string">&#x27;__str__&#x27;</span>, <span class="string">&#x27;__subclasshook__&#x27;</span>]</span><br></pre></td></tr></table></figure>
+<p>​    所以，当使用 dir() 查看 list 或其他可变对象时，也能看到 <code>__eq__</code> 和 <code>__hash__</code> ；并且如果自定义一个类，当调用 hash() 方法时，也可以得到一个 hash值</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Car</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, color</span>):</span><br><span class="line">        self.color = color</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">color</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;&#123;&#125;&quot;</span>, self.color)</span><br><span class="line"></span><br><span class="line">car = Car(<span class="string">&#x27;blue&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">hash</span>(car))     <span class="comment"># 143713058673</span></span><br></pre></td></tr></table></figure>
+<p>​    <strong>补充：Python 的自省</strong></p>
+<p>​    所谓自省，指的是程序运行过程中可以知道对象的类型或者是对象内部结构，Python 中天然支持这个操作，例如上面的 dir 方法，可以快速知道对象内部所有的方法，使用 type 方法也可以知道一个对象的类型</p>
+<h3 id="可变，不可哈希"><a href="#可变，不可哈希" class="headerlink" title="可变，不可哈希"></a>可变，不可哈希</h3><p>​    上面说到内存地址不一致，表明这个对象是不可变的，反之如果一个对象操作后 id 不变，那就是一个可变对象</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">id</span>(a))     <span class="comment"># 2241896735240</span></span><br><span class="line"></span><br><span class="line">a.append(<span class="number">4</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">id</span>(a))     <span class="comment"># 2241896735240</span></span><br><span class="line"><span class="built_in">print</span>(a)         <span class="comment"># [1, 2, 3, 4]</span></span><br></pre></td></tr></table></figure>
+<p>​    由此可知，为什么 python 中的字段不能使用 可变数据类型，因为字典的查找会通过 key 找对应的值，如果 key 使用可变类型，就会导致不同的值最后依赖的是相同的 key，这显然是不对的</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">Legacy</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/1520610863/">http://example.com/1520610863/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank"></a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%9F%BA%E7%A1%80/">基础</a></div><div class="post_share"><div class="social-share" data-image="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3643566126,3775444869&amp;fm=26&amp;gp=0.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/3857016810/"><img class="prev-cover" src="https://wei-foun.github.io/img/singstreet.JPG" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">python 基础语法-一</div></div></a></div><div class="next-post pull-right"><a href="/2983461467/"><img class="next-cover" src="https://wei-foun.github.io/img/hello.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">hello-world</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Legacy</div><div class="author-info__description">冒险的生涯在召唤！</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">46</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">28</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">43</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">Live a life you will remember</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%96%E7%A8%8B%E7%9F%A5%E8%AF%86%E7%AE%80%E5%8D%95%E6%95%B4%E7%90%86"><span class="toc-number">1.</span> <span class="toc-text">编程知识简单整理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%AD%E8%A8%80%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.1.</span> <span class="toc-text">语言类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%87%8A%E5%9E%8B%E5%92%8C%E7%BC%96%E8%AF%91%E5%9E%8B"><span class="toc-number">1.2.</span> <span class="toc-text">解释型和编译型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A8%E6%80%81%E5%92%8C%E9%9D%99%E6%80%81"><span class="toc-number">1.3.</span> <span class="toc-text">动态和静态</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%BA%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%BC%B1%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.4.</span> <span class="toc-text">强类型和弱类型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.</span> <span class="toc-text">编码类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-number">3.</span> <span class="toc-text">数据类型的分类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E5%93%88%E5%B8%8C%EF%BC%8C%E4%B8%8D%E5%8F%AF%E5%8F%98"><span class="toc-number">3.1.</span> <span class="toc-text">可哈希，不可变</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E5%8F%98%EF%BC%8C%E4%B8%8D%E5%8F%AF%E5%93%88%E5%B8%8C"><span class="toc-number">3.2.</span> <span class="toc-text">可变，不可哈希</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/4209932858/" title="容器网络"><img src="https://wei-foun.github.io/img/cover44.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="容器网络"/></a><div class="content"><a class="title" href="/4209932858/" title="容器网络">容器网络</a><time datetime="2023-07-04T16:26:58.000Z" title="发表于 2023-07-05 00:26:58">2023-07-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/4253636491/" title="kubernetes-搭建"><img src="https://wei-foun.github.io/img/cover43.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="kubernetes-搭建"/></a><div class="content"><a class="title" href="/4253636491/" title="kubernetes-搭建">kubernetes-搭建</a><time datetime="2023-03-19T10:39:02.000Z" title="发表于 2023-03-19 18:39:02">2023-03-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/undefined/" title="wsl docker 卸载"><img src="https://wei-foun.github.io/img/cover42.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="wsl docker 卸载"/></a><div class="content"><a class="title" href="/undefined/" title="wsl docker 卸载">wsl docker 卸载</a><time datetime="2023-03-05T08:50:50.000Z" title="发表于 2023-03-05 16:50:50">2023-03-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2970976912/" title="日积跬步"><img src="https://wei-foun.github.io/img/cover24.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="日积跬步"/></a><div class="content"><a class="title" href="/2970976912/" title="日积跬步">日积跬步</a><time datetime="2023-01-27T06:45:15.000Z" title="发表于 2023-01-27 14:45:15">2023-01-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/1772758044/" title="关于MySQL的一些问题"><img src="https://wei-foun.github.io/img/cover41.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="关于MySQL的一些问题"/></a><div class="content"><a class="title" href="/1772758044/" title="关于MySQL的一些问题">关于MySQL的一些问题</a><time datetime="2022-11-26T03:17:32.000Z" title="发表于 2022-11-26 11:17:32">2022-11-26</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3643566126,3775444869&amp;fm=26&amp;gp=0.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By Legacy</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'MHzSjOElX9Cf5IJAfoNr4COL-gzGzoHsz',
+      appKey: 'K3d5HK6zRMD2BINwstEANt7H',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: {"tv_doge":"6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png","tv_親親":"a8111ad55953ef5e3be3327ef94eb4a39d535d06.png","tv_偷笑":"bb690d4107620f1c15cff29509db529a73aee261.png","tv_再見":"180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png","tv_冷漠":"b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png","tv_發怒":"34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png","tv_發財":"34db290afd2963723c6eb3c4560667db7253a21a.png","tv_可愛":"9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png","tv_吐血":"09dd16a7aa59b77baa1155d47484409624470c77.png","tv_呆":"fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png","tv_嘔吐":"9f996894a39e282ccf5e66856af49483f81870f3.png","tv_困":"241ee304e44c0af029adceb294399391e4737ef2.png","tv_壞笑":"1f0b87f731a671079842116e0991c91c2c88645a.png","tv_大佬":"093c1e2c490161aca397afc45573c877cdead616.png","tv_大哭":"23269aeb35f99daee28dda129676f6e9ea87934f.png","tv_委屈":"d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png","tv_害羞":"a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png","tv_尷尬":"7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png","tv_微笑":"70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png","tv_思考":"90cf159733e558137ed20aa04d09964436f618a1.png","tv_驚嚇":"0d15c7e2ee58e935adc6a7193ee042388adc22af.png"},
+      path: window.location.pathname,
+      visitor: true
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
