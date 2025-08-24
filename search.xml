@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>mysql-主备</title>
+      <link href="/3930090917/"/>
+      <url>/3930090917/</url>
+      
+        <content type="html"><![CDATA[<h3 id="主备切换基本逻辑"><a href="#主备切换基本逻辑" class="headerlink" title="主备切换基本逻辑"></a>主备切换基本逻辑</h3><p>​    当两台 mysql 机器，A 为 master，B 为 slave。一般场景下，A 负责写，B 负责读，所以 B 上通常会设置 readonly，且 A 和 B 的 server id 需要不一致，防止切换后出现 binlog 同步循环执行的问题</p><p>​    正常情况下，所有写操作都会在 A 中被记录 binlog，然后 A 和 B 会维持一个长连接，B 只需要同步 A 的 binlog 在自己本地执行即可保持一致。不过 B 会将同步的 binlog 写到本地文件 relay log，然后再从本地 relay log 读取执行</p><p>​    当 A 发生故障时，需要将 B 提升为 master，移除 readonly 设置，并将 A 设为 readonly。设置 readonly，可以方便知道节点的角色，也可以避免切换过程出现双写导致不一致问题</p><h3 id="binlog-的三个格式"><a href="#binlog-的三个格式" class="headerlink" title="binlog 的三个格式"></a>binlog 的三个格式</h3><p>​    binlog 有三种格式：statement（记录的 sql），row（会记录操作目标和行为），mixed（是前两者的混合模式）</p><p>​    如果要查看使用的是哪种格式：<code>SHOW VARIABLES LIKE &#39;binlog_format&#39;</code>，在高版本 mysql 中，默认使用的是 row 格式</p><p>​    statement 格式：所记录的是原 sql 语句，在主从模式下可会有问题，比如 sql 在主节点删除一条户数据且使用 limit=1，如果主从节点 mysql 有版本或索引不一致，会导致从库同步主库 binlog 后选择不同索引而将 limit 的第一行记录作为删除，导致主从不一致</p><p>​    row 格式：通过 <code>show binlog EVENTS</code> 可以查看到当前节点的 binlog 内容，在 row 格式下，会有两个事件 <code>Table_map</code> 和 <code>Write_rows</code>，前者记录操作了哪个表，后者用于记录做的行为，同时会有一个 <code>Xid</code>，这个 id 用于关联 redo log 和 binlog，表示事务是成功提交的</p><p>​    在 row 格式下，binlog 会明确记录操作行的主键 id，因此不会出现 statement 格式主从同步执行后的不一致问题，但是 row 格式会占用更多资源</p><p>​    mixed 格式：结合了两个格式，会由 mysql 自行判断 sql 语句是否会有引起主从不一致的可能。比如前面带 limit=1 的删除，设置 mixed 下最后 binlog 会记录 row 格式，没有 limit 将会记录 statement 格式。这样就避免比如一次删除几万条数据，mixed 就无需像 row 格式那样将每一条记录到写到 binlog，从而节省了空间和 io 消耗</p><p>​    如果需要使用 binlog 恢复数据，应该使用 mysqlbinlog 工具去解析，并将解析结果交给 mysql 执行</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 将 master.000001 文件里面从第 2738 字节到第 2973 字节中间这段内容解析出来给 mysql 执行</span></span><br><span class="line">mysqlbinlog master.000001 --start-position=2738 --stop-position=2973 | mysql -h127.0.0.1 -P13000 -u<span class="variable">$user</span> -p<span class="variable">$pwd</span>;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> mysql 整理 </category>
+          
+          <category> mysql 主备 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> mysql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>redis-分布式锁</title>
       <link href="/2733267950/"/>
       <url>/2733267950/</url>
