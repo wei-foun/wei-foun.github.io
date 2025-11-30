@@ -1,0 +1,241 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>saltstack | </title><meta name="keywords" content="linux"><meta name="author" content="Legacy"><meta name="copyright" content="Legacy"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="SaltStack​    基于 python 开发的一套 C&#x2F;S 架构配置管理的自动化运维工具，底层使用 ZeroMQ 作为消息队列。和它类似的较为流行的工具 ansible 一样也是基于 python 开发的，两者最大的区别就是 saltstack 是 C&#x2F;S 架构需要安装客户端，后者 ansible 则无需安装客户端而是使用 ssh 协议    差异 &#x2F; 项目名 saltstack ansi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="saltstack">
+<meta property="og:url" content="http://example.com/1749659306/index.html">
+<meta property="og:site_name">
+<meta property="og:description" content="SaltStack​    基于 python 开发的一套 C&#x2F;S 架构配置管理的自动化运维工具，底层使用 ZeroMQ 作为消息队列。和它类似的较为流行的工具 ansible 一样也是基于 python 开发的，两者最大的区别就是 saltstack 是 C&#x2F;S 架构需要安装客户端，后者 ansible 则无需安装客户端而是使用 ssh 协议    差异 &#x2F; 项目名 saltstack ansi">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://wei-foun.github.io/img/cover57.jpg">
+<meta property="article:published_time" content="2025-11-30T16:05:57.000Z">
+<meta property="article:modified_time" content="2025-11-30T16:11:19.581Z">
+<meta property="article:author" content="Legacy">
+<meta property="article:tag" content="linux">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://wei-foun.github.io/img/cover57.jpg"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://example.com/1749659306/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'saltstack',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-12-01 00:11:19'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">59</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">37</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">56</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 爱好收集</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://wei-foun.github.io/img/cover57.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/"></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 爱好收集</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">saltstack</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-11-30T16:05:57.000Z" title="发表于 2025-12-01 00:05:57">2025-12-01</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-11-30T16:11:19.581Z" title="更新于 2025-12-01 00:11:19">2025-12-01</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="saltstack"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h3 id="SaltStack"><a href="#SaltStack" class="headerlink" title="SaltStack"></a>SaltStack</h3><p>​    基于 python 开发的一套 C/S 架构配置管理的自动化运维工具，底层使用 ZeroMQ 作为消息队列。和它类似的较为流行的工具 ansible 一样也是基于 python 开发的，两者最大的区别就是 saltstack 是 C/S 架构需要安装客户端，后者 ansible 则无需安装客户端而是使用 ssh 协议</p>
+<table>
+<thead>
+<tr>
+<th>差异 / 项目名</th>
+<th>saltstack</th>
+<th>ansible</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>开发语言</td>
+<td>python</td>
+<td>python</td>
+</tr>
+<tr>
+<td>是否有客户端</td>
+<td>是</td>
+<td>否</td>
+</tr>
+<tr>
+<td>服务器与远程服务器加密方式</td>
+<td>AES 通信</td>
+<td>openssh 通信</td>
+</tr>
+<tr>
+<td>配置文件类型</td>
+<td>yaml</td>
+<td>ini，yaml</td>
+</tr>
+</tbody></table>
+<p>​    在 saltstack 中，server 端是 master，client 端是 minion，两者 <strong>通过 zeroMQ 的 pub/sub 发布订阅模式进行通信</strong>，可以使用 linux 的包管理工具，或使用 pip 去安装</p>
+<p>​    安装完成后，master 和 minion 文件需要修改一些配置，修改后需要重启服务，master：<code>service salt-master restart</code>，minion：<code>service salt-minion restart</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># master 上 /etc/salt/master 文件</span></span><br><span class="line"></span><br><span class="line">master: &lt;ip address&gt;</span><br><span class="line"><span class="comment"># 可以开启自动认证，省去 minion 连接 master，手动使用 salt-key 去通过 minion key 认证</span></span><br><span class="line">auto_accept: True</span><br><span class="line"><span class="comment"># file_roots 可以根据环境配置目录，然后执行 salt 命令时，可以将目录的文件发送给 minion 执行</span></span><br><span class="line">file_roots:</span><br><span class="line">  <span class="comment"># 默认目录，比如 cp.get_file salt://fw-master.txt，fw-master.txt 就是在 /srv/salt/ 目录下</span></span><br><span class="line">  base:</span><br><span class="line">    - /srv/salt/</span><br><span class="line">  dev:</span><br><span class="line">    - /srv/salt/dev/services</span><br><span class="line">    - /srv/salt/dev/states</span><br><span class="line">  prod:</span><br><span class="line">    - /srv/salt/prod/services</span><br><span class="line">    - /srv/salt/prod/states</span><br><span class="line"></span><br><span class="line">------------------------------------------------------------------------------------</span><br><span class="line">    </span><br><span class="line"><span class="comment"># minion 上 /etc/salt/minion 文件</span></span><br><span class="line"></span><br><span class="line">master: &lt;ip address&gt;</span><br><span class="line"><span class="comment"># id 用户配置 minion 表示，默认是以当前主机的 hostname 来表示</span></span><br><span class="line"><span class="built_in">id</span>: &lt;用于表示 minion&gt;</span><br></pre></td></tr></table></figure>
+<p>​    如果 master 没有配置自动认证，那么需要在 master 上执行 <code>salt-key -a &lt;minion id&gt;</code> 来手动通过指定的 minion 连接 master，或者使用 <code>salt-key -A</code> 允许所有的 minion 连接。使用 <code>salt-key</code> 可以查看哪些是通过，拒绝，或是删除的</p>
+<h4 id="运行端口"><a href="#运行端口" class="headerlink" title="运行端口"></a>运行端口</h4><p>SaltStack master 启动后默认监听 4505 和 4506 两个端口</p>
+<ul>
+<li>Publisher（4505）：所有 minions 都需要建立一个持续连接到他们收听消息的发布者端口。命令是通过此端口异步发送给所有连接，这使命令可以在大量系统上同时执行</li>
+<li>Request Server（4506）：minions 根据需要连接到请求服务器，将结果发送给 master，并安全地获取请求的文件或与特定 minion 相关的数据（pillar）</li>
+</ul>
+<p><img src="https://wei-foun.github.io/img/saltstack.png" alt="img"></p>
+<h4 id="认证过程"><a href="#认证过程" class="headerlink" title="认证过程"></a>认证过程</h4><ul>
+<li>minion 在第一次启动时，会在 /etc/salt/pki/minion/ 下自动生成一对密钥，然后将公钥发给 master</li>
+<li>master 收到 minion 的公钥后，通过 salt-key 命令接受该公钥。此时 master 的 /etc/salt/pki/master/minions 目录将会存放以 minion id 命名的公钥，然后 master 就能对 minion 发送控制指令了</li>
+</ul>
+<h4 id="其他模块"><a href="#其他模块" class="headerlink" title="其他模块"></a>其他模块</h4><p>​    Salt 中还有两个模块 grains 和 pillar</p>
+<ul>
+<li>Grains 是存储在 minion 的静态元数据信息，如 os，username，num_cpus，mem_total 等</li>
+<li>Pillar 是存储在 maste 的动态敏感数据，如密码，秘钥，根据需要发送到 minion<ul>
+<li>使用 pillar，需要在 master 的配置文件中配置和创建这个目录</li>
+<li><pre><code class="Bash">  pillar_roots:
+    base:
+      - /srv/pillar
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 然后在 /srv/pillar ，创建 top.sls（这个只能在 base 指定的目录下），以及创建 top 里文件对应的数据</span><br><span class="line">- ```Bash</span><br><span class="line">    root@k8s-master:/srv/salt# cat /srv/pillar/top.sls</span><br><span class="line">    base:</span><br><span class="line">      &#x27;*&#x27;:    # * 表示匹配所有，即所有 minion 上下发  webserver_config.sls 文件中的配置</span><br><span class="line">        - webserver_config</span><br><span class="line">        </span><br><span class="line">    root@k8s-master:/srv/salt# cat /srv/pillar/webserver_config.sls</span><br><span class="line">    app:</span><br><span class="line">      port: 8080</span><br><span class="line">      secret_key: 123213123</span><br><span class="line">      </span><br><span class="line">    root@k8s-master:/srv/salt# salt &#x27;*&#x27; pillar.items</span><br><span class="line">    k8s-worker2:</span><br><span class="line">        ----------</span><br><span class="line">        app:</span><br><span class="line">            ----------</span><br><span class="line">            port:</span><br><span class="line">                8080</span><br><span class="line">            secret_key:</span><br><span class="line">                123213123</span><br><span class="line">    k8s-worker1:</span><br><span class="line">        ----------</span><br><span class="line">        app:</span><br><span class="line">            ----------</span><br><span class="line">            port:</span><br><span class="line">                8080</span><br><span class="line">            secret_key:</span><br><span class="line">                123213123</span><br></pre></td></tr></table></figure>
+​    Salt 中还有一个 State 模块，其目的是用于保持 minion 的状态一致，比如 pillar 的信息配置，可以通过 state 来让 minion 去应用，salt 的 state 文件默认 base 是 `/srv/salt` 这个目录下
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">root@k8s-master:/srv/salt<span class="comment"># cat app.sls</span></span><br><span class="line">configure_app:           <span class="comment"># state 的自定义 id 标识</span></span><br><span class="line">  file.managed:          <span class="comment"># 调用 file.managed 模块，来在 minion 上创建文件</span></span><br><span class="line">    - name: /root/app.conf     <span class="comment"># 指定 minion 创建的文件路径</span></span><br><span class="line">    - contents: |              <span class="comment"># contents 中，使用了分发到 minion 的 pillar 里的数据</span></span><br><span class="line">        token=&#123;&#123; pillar[<span class="string">&#x27;app&#x27;</span>][<span class="string">&#x27;secret_key&#x27;</span>] &#125;&#125;</span><br><span class="line">       </span><br><span class="line">root@k8s-master:/srv/salt<span class="comment"># salt &#x27;*&#x27; state.sls app env=base      </span></span><br><span class="line"><span class="comment"># 这里 env=base 可以不加，因为 app.sls 这个文件是放在了 base 的 /srv/salt 下</span></span><br><span class="line"><span class="comment"># 如果是 /srv/salt/appconfig 这个目录，那么 state.sls 路径就是 appconfig.app</span></span><br><span class="line"><span class="comment"># 如果 state 的 sls 文件是在非 base 的 dev、prod 下，那么这个文件需要在对应目录下</span></span><br><span class="line">k8s-worker2:</span><br><span class="line">----------</span><br><span class="line">          ID: configure_app</span><br><span class="line">    Function: file.managed</span><br><span class="line">        Name: /root/app.conf</span><br><span class="line">      Result: True</span><br><span class="line">     Comment: File /root/app.conf updated</span><br><span class="line">     Started: 00:06:50.511564</span><br><span class="line">    Duration: 24.218 ms</span><br><span class="line">     Changes:</span><br><span class="line">              ----------</span><br><span class="line">              diff:</span><br><span class="line">                  New file</span><br><span class="line"></span><br><span class="line">Summary <span class="keyword">for</span> k8s-worker2</span><br><span class="line">------------</span><br><span class="line">Succeeded: 1 (changed=1)</span><br><span class="line">Failed:    0</span><br><span class="line">------------</span><br><span class="line">Total states run:     1</span><br><span class="line">Total run time:  24.218 ms</span><br><span class="line"></span><br><span class="line">-------------------------------------------------------------------------------------------</span><br><span class="line">root@k8s-worker2:~<span class="comment"># cat /root/app.conf        # 可以看到 minion 上多了这个文件</span></span><br><span class="line">token=123213123</span><br></pre></td></tr></table></figure>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">Legacy</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/1749659306/">http://example.com/1749659306/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank"></a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/linux/">linux</a></div><div class="post_share"><div class="social-share" data-image="https://wei-foun.github.io/img/cover57.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/3020005594/"><img class="next-cover" src="https://wei-foun.github.io/img/cover56.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">nsenter</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2133446919/" title="Linux 基础"><img class="cover" src="https://wei-foun.github.io/img/cover46.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-07-12</div><div class="title">Linux 基础</div></div></a></div><div><a href="/2554484522/" title="LVS"><img class="cover" src="https://wei-foun.github.io/img/cover52.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-08-23</div><div class="title">LVS</div></div></a></div><div><a href="/3739994726/" title="虚拟化"><img class="cover" src="https://wei-foun.github.io/img/cover53.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-08-23</div><div class="title">虚拟化</div></div></a></div><div><a href="/3020005594/" title="nsenter"><img class="cover" src="https://wei-foun.github.io/img/cover56.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-11-30</div><div class="title">nsenter</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Legacy</div><div class="author-info__description">冒险的生涯在召唤！</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">59</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">37</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">56</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">Live a life you will remember</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#SaltStack"><span class="toc-number">1.</span> <span class="toc-text">SaltStack</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E7%AB%AF%E5%8F%A3"><span class="toc-number">1.1.</span> <span class="toc-text">运行端口</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AE%A4%E8%AF%81%E8%BF%87%E7%A8%8B"><span class="toc-number">1.2.</span> <span class="toc-text">认证过程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E6%A8%A1%E5%9D%97"><span class="toc-number">1.3.</span> <span class="toc-text">其他模块</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/1749659306/" title="saltstack"><img src="https://wei-foun.github.io/img/cover57.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="saltstack"/></a><div class="content"><a class="title" href="/1749659306/" title="saltstack">saltstack</a><time datetime="2025-11-30T16:05:57.000Z" title="发表于 2025-12-01 00:05:57">2025-12-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/3020005594/" title="nsenter"><img src="https://wei-foun.github.io/img/cover56.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="nsenter"/></a><div class="content"><a class="title" href="/3020005594/" title="nsenter">nsenter</a><time datetime="2025-11-30T07:30:25.000Z" title="发表于 2025-11-30 15:30:25">2025-11-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/3930090917/" title="mysql-主备"><img src="https://wei-foun.github.io/img/cover55.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="mysql-主备"/></a><div class="content"><a class="title" href="/3930090917/" title="mysql-主备">mysql-主备</a><time datetime="2025-08-24T13:50:40.000Z" title="发表于 2025-08-24 21:50:40">2025-08-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2733267950/" title="redis-分布式锁"><img src="https://wei-foun.github.io/img/cover54.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="redis-分布式锁"/></a><div class="content"><a class="title" href="/2733267950/" title="redis-分布式锁">redis-分布式锁</a><time datetime="2025-08-24T08:14:44.000Z" title="发表于 2025-08-24 16:14:44">2025-08-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/3739994726/" title="虚拟化"><img src="https://wei-foun.github.io/img/cover53.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="虚拟化"/></a><div class="content"><a class="title" href="/3739994726/" title="虚拟化">虚拟化</a><time datetime="2025-08-23T10:43:26.000Z" title="发表于 2025-08-23 18:43:26">2025-08-23</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://wei-foun.github.io/img/cover57.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By Legacy</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'MHzSjOElX9Cf5IJAfoNr4COL-gzGzoHsz',
+      appKey: 'K3d5HK6zRMD2BINwstEANt7H',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: {"tv_doge":"6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png","tv_親親":"a8111ad55953ef5e3be3327ef94eb4a39d535d06.png","tv_偷笑":"bb690d4107620f1c15cff29509db529a73aee261.png","tv_再見":"180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png","tv_冷漠":"b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png","tv_發怒":"34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png","tv_發財":"34db290afd2963723c6eb3c4560667db7253a21a.png","tv_可愛":"9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png","tv_吐血":"09dd16a7aa59b77baa1155d47484409624470c77.png","tv_呆":"fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png","tv_嘔吐":"9f996894a39e282ccf5e66856af49483f81870f3.png","tv_困":"241ee304e44c0af029adceb294399391e4737ef2.png","tv_壞笑":"1f0b87f731a671079842116e0991c91c2c88645a.png","tv_大佬":"093c1e2c490161aca397afc45573c877cdead616.png","tv_大哭":"23269aeb35f99daee28dda129676f6e9ea87934f.png","tv_委屈":"d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png","tv_害羞":"a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png","tv_尷尬":"7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png","tv_微笑":"70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png","tv_思考":"90cf159733e558137ed20aa04d09964436f618a1.png","tv_驚嚇":"0d15c7e2ee58e935adc6a7193ee042388adc22af.png"},
+      path: window.location.pathname,
+      visitor: true
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
